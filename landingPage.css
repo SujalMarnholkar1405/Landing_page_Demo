@@ -1,0 +1,175 @@
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.loginform {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: white;
+   
+    border-radius: 8px;
+    padding:20px ;
+    width: 450px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.trems{
+    display: flex;
+    justify-content: start;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-size: 0.9rem;
+    flex-wrap: wrap; 
+}
+
+.terms input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.terms label {
+    cursor: pointer;
+}
+
+.terms a {
+    color: blue;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 760px) { 
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        position: absolute;
+        top: 50px;
+    }
+
+    .content, .form-container {
+        width: 90%;
+        margin-bottom: 20px; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 0.9rem; 
+    }
+
+    .loginform {
+      padding: 15px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .loginform {
+        padding: 10px; 
+    }
+
+    .terms {
+        font-size: 0.8rem; 
+    }
+}
+
+@media (min-width: 950px) { 
+    .form-container {
+        width: 50%; 
+    }
+    .content{
+        width: 50%;
+    }
+}
